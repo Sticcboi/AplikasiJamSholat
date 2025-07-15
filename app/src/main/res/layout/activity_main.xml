@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A192E"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-light"
+            android:text="00:00:00"
+            android:textColor="@color/white"
+            android:textSize="56sp" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Kamis, 1 Januari 1970"
+            android:textColor="@color/white_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="Lokasi: Memuat..."
+            android:textColor="@color/white_text_color"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_location" />
+
+        <!-- Tombol Baru untuk Kompas Kiblat -->
+        <Button
+            android:id="@+id/buttonQibla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/blue_highlight_color"
+            android:text="🧭 Arah Kiblat"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/layoutIqamah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_background_dark"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Menuju Iqamah"
+                android:textColor="@color/white_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewIqamahCountdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-medium"
+                android:text="10:00"
+                android:textColor="@color/teal_200"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutPrayerTimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewFajr"
+                style="@style/PrayerTimeItem"
+                android:text="Subuh: 00:00" />
+
+            <TextView
+                android:id="@+id/textViewSunrise"
+                style="@style/PrayerTimeItem"
+                android:text="Terbit: 00:00" />
+
+            <TextView
+                android:id="@+id/textViewDhuhr"
+                style="@style/PrayerTimeItem"
+                android:text="Dzuhur: 00:00" />
+
+            <TextView
+                android:id="@+id/textViewAsr"
+                style="@style/PrayerTimeItem"
+                android:text="Ashar: 00:00" />
+
+            <TextView
+                android:id="@+id/textViewMaghrib"
+                style="@style/PrayerTimeItem"
+                android:text="Maghrib: 00:00" />
+
+            <TextView
+                android:id="@+id/textViewIsha"
+                style="@style/PrayerTimeItem"
+                android:text="Isya: 00:00" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

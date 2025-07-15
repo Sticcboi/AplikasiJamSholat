@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#304C6E" /> <!-- A solid blue color for next upcoming prayer -->
+    <corners android:radius="10dp" />
+    <stroke android:width="2dp" android:color="#42A5F5" /> <!-- A lighter blue border -->
+</shape>

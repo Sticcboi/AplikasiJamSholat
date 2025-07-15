@@ -1,0 +1,12 @@
+<!-- res/drawable/ic_qibla_pointer.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <path
+        android:name="qibla_arrow"
+        android:fillColor="@color/teal_200"
+        android:pathData="M50,0 L65,50 L50,40 L35,50 Z" />
+</vector>

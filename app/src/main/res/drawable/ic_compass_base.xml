@@ -1,0 +1,127 @@
+<!-- res/drawable/ic_compass_base.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="300"
+    android:viewportHeight="300">
+
+    <path
+        android:fillColor="#1F3A5F"
+        android:pathData="M150,150m-140,0a140,140 0,1 1,280 0a140,140 0,1 1,-280 0" />
+
+    <path
+        android:strokeColor="#4A6572"
+        android:strokeWidth="2"
+        android:pathData="M150,150m-120,0a120,120 0,1 1,240 0a120,120 0,1 1,-240 0" />
+
+    <!-- Ticks -->
+    <group
+        android:pivotX="150"
+        android:pivotY="150"
+        android:rotation="0">
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:pathData="M150,20 L150,40" />
+    </group>
+    <group
+        android:pivotX="150"
+        android:pivotY="150"
+        android:rotation="30">
+        <path
+            android:strokeColor="#88FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M150,25 L150,40" />
+    </group>
+    <group
+        android:pivotX="150"
+        android:pivotY="150"
+        android:rotation="60">
+        <path
+            android:strokeColor="#88FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M150,25 L150,40" />
+    </group>
+    <group
+        android:pivotX="150"
+        android:pivotY="150"
+        android:rotation="90">
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:pathData="M150,20 L150,40" />
+    </group>
+    <group
+        android:pivotX="150"
+        android:pivotY="150"
+        android:rotation="120">
+        <path
+            android:strokeColor="#88FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M150,25 L150,40" />
+    </group>
+    <group
+        android:pivotX="150"
+        android:pivotY="150"
+        android:rotation="150">
+        <path
+            android:strokeColor="#88FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M150,25 L150,40" />
+    </group>
+    <group
+        android:pivotX="150"
+        android:pivotY="150"
+        android:rotation="180">
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:pathData="M150,20 L150,40" />
+    </group>
+    <group
+        android:pivotX="150"
+        android:pivotY="150"
+        android:rotation="210">
+        <path
+            android:strokeColor="#88FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M150,25 L150,40" />
+    </group>
+    <group
+        android:pivotX="150"
+        android:pivotY="150"
+        android:rotation="240">
+        <path
+            android:strokeColor="#88FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M150,25 L150,40" />
+    </group>
+    <group
+        android:pivotX="150"
+        android:pivotY="150"
+        android:rotation="270">
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:pathData="M150,20 L150,40" />
+    </group>
+     <group
+        android:pivotX="150"
+        android:pivotY="150"
+        android:rotation="300">
+        <path
+            android:strokeColor="#88FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M150,25 L150,40" />
+    </group>
+     <group
+        android:pivotX="150"
+        android:pivotY="150"
+        android:rotation="330">
+        <path
+            android:strokeColor="#88FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M150,25 L150,40" />
+    </group>
+
+</vector>

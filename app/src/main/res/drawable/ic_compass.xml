@@ -1,0 +1,60 @@
+<!-- res/drawable/ic_compass.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"> <!-- Added tools namespace -->
+
+    <!-- Lingkaran luar (border) -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#4A6572" />
+            <!-- This item helps define the overall size -->
+        </shape>
+    </item>
+
+    <!-- Lingkaran utama kompas -->
+    <item android:top="8dp" android:bottom="8dp" android:left="8dp" android:right="8dp">
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="#233440"
+                android:endColor="#0A192E"
+                android:type="sweep"
+                android:centerX="0.5"
+                android:centerY="0.5"/>
+        </shape>
+    </item>
+
+    <!-- Tanda Utara (segitiga) -->
+    <item android:gravity="center_horizontal|top" android:top="12dp" android:width="16dp" android:height="16dp">
+        <rotate android:fromDegrees="180">
+            <shape android:shape="rectangle"> <!-- Shape can be rectangle, path is what matters -->
+                <path android:pathData="M5,0 L10,10 L0,10 Z" android:fillColor="#E53935"/>
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Garis bantu vertikal -->
+    <!-- This item is 1dp wide. Its height will be that of the layer-list.
+         android:gravity="center_horizontal" will center it.
+         If you want padding on the top/bottom of this line, add android:top & android:bottom here. -->
+    <item android:gravity="center_horizontal"
+        android:top="16dp" android:bottom="16dp"> <!-- Adjust 16dp if you want different padding for the line ends -->
+        <shape android:shape="rectangle">
+            <size android:width="1dp" /> <!-- Explicitly 1dp wide -->
+            <!-- The height of the shape will stretch to the item's bounds (defined by layer-list and item's top/bottom) -->
+            <solid android:color="#4A6572" />
+        </shape>
+    </item>
+
+    <!-- Garis bantu horizontal -->
+    <!-- This item is 1dp high. Its width will be that of the layer-list.
+         android:gravity="center_vertical" will center it.
+         If you want padding on the left/right of this line, add android:left & android:right here. -->
+    <item android:gravity="center_vertical"
+        android:left="16dp" android:right="16dp"> <!-- Adjust 16dp if you want different padding for the line ends -->
+        <shape android:shape="rectangle">
+            <size android:height="1dp" /> <!-- Explicitly 1dp high -->
+            <!-- The width of the shape will stretch to the item's bounds (defined by layer-list and item's left/right) -->
+            <solid android:color="#4A6572" />
+        </shape>
+    </item>
+
+</layer-list>

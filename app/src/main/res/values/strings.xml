@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JamSholat</string>
+    <string name="channel_name">Notifikasi Waktu Sholat</string>
+    <string name="channel_description">Notifikasi untuk mengingatkan waktu sholat.</string>
+    <string name="qibla_compass">Kompas Kiblat</string>
+</resources>
